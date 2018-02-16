@@ -68,10 +68,10 @@ def segment (image):
     mask = np.logical_not(mask)
 
     #Finally remove the background
-    img[mask] = 0;
 
     # fname = path.split('/')[-1]
     bgr = cv2.cvtColor(img, cv2.COLOR_HSV2BGR)
+    bgr[mask] = 255;
     return bgr
     # print (path)
 
