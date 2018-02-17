@@ -58,6 +58,7 @@ def segment (image):
     sobel_8u = np.asarray(sobel, np.uint8)
 
     # Find contours
+    img2 = img.copy()
     significant = findSignificantContours(img, sobel_8u)
 
     # Mask
@@ -70,7 +71,7 @@ def segment (image):
     #Finally remove the background
 
     # fname = path.split('/')[-1]
-    bgr = cv2.cvtColor(img, cv2.COLOR_HSV2BGR)
+    bgr = cv2.cvtColor(img2, cv2.COLOR_HSV2BGR)
     bgr[mask] = 255;
     return bgr
     # print (path)
