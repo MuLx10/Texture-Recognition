@@ -78,6 +78,9 @@ def segment (image):
 
 import sys
 name = sys.argv[1]
+# print("in Bg_removal")
+# print(name)
 image = cv2.imread(name)
 img = segment(image)
-cv2.imwrite('final.jpg', img);
+cv2.imwrite(name.split('.')[0]+'_bg_.jpg', img);
+# print("out Bg_removal")
