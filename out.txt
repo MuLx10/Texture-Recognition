@@ -1,0 +1,80 @@
+Starting epoch 1 / 10
+Train accuracy: 0.692982
+Val accuracy: 0.666667
+
+Starting epoch 2 / 10
+Train accuracy: 0.692982
+Val accuracy: 0.666667
+
+Starting epoch 3 / 10
+Train accuracy: 0.307018
+Val accuracy: 0.333333
+
+Starting epoch 4 / 10
+Train accuracy: 0.500000
+Val accuracy: 0.566667
+
+Starting epoch 5 / 10
+Train accuracy: 0.307018
+Val accuracy: 0.333333
+
+Starting epoch 6 / 10
+Train accuracy: 0.692982
+Val accuracy: 0.666667
+
+Starting epoch 7 / 10
+Train accuracy: 0.307018
+Val accuracy: 0.333333
+
+Starting epoch 8 / 10
+Train accuracy: 0.692982
+Val accuracy: 0.666667
+
+Starting epoch 9 / 10
+Train accuracy: 0.692982
+Val accuracy: 0.666667
+
+Starting epoch 10 / 10
+Train accuracy: 0.692982
+Val accuracy: 0.666667
+
+Starting epoch 1 / 10
+Train accuracy: 0.692982
+Val accuracy: 0.666667
+
+Starting epoch 2 / 10
+Train accuracy: 0.701754
+Val accuracy: 0.683333
+
+Starting epoch 3 / 10
+Train accuracy: 0.719298
+Val accuracy: 0.683333
+
+Starting epoch 4 / 10
+Train accuracy: 0.728070
+Val accuracy: 0.716667
+
+Starting epoch 5 / 10
+Train accuracy: 0.692982
+Val accuracy: 0.700000
+
+Starting epoch 6 / 10
+Train accuracy: 0.692982
+Val accuracy: 0.666667
+
+Starting epoch 7 / 10
+Train accuracy: 0.710526
+Val accuracy: 0.683333
+
+Starting epoch 8 / 10
+Train accuracy: 0.684211
+Val accuracy: 0.750000
+
+Starting epoch 9 / 10
+Train accuracy: 0.736842
+Val accuracy: 0.733333
+
+Starting epoch 10 / 10
+Train accuracy: 0.719298
+Val accuracy: 0.750000
+
