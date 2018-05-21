@@ -47,7 +47,7 @@ def upload():
         result = lb.main(destination)
         os.system('rm '+destination)
         
-        return render_template("upload.html",good='good '+str(result['good']),bad='bad '+str(result['bad']))
+        return render_template("upload.html",good='Good '+str(result['good']),bad='Bad '+str(result['bad']))
     except:
         return render_template("upload.html",good='',bad='')
         
