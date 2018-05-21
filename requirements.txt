@@ -1,0 +1,7 @@
+gunicorn
+cython
+Flask
+numpy
+tensorflow
+opencv-python
+rawpy

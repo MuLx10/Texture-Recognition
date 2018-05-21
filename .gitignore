@@ -1,0 +1,7 @@
+*.pb
+*.jpg
+*.NEF
+*.png
+*.jpeg
+*.pyc
+*.ckpt
