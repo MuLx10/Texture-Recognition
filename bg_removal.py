@@ -14,7 +14,7 @@ def findSignificantContours (img, sobel_8u):
     try:
         _,contours, heirarchy = cv2.findContours(sobel_8u, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
     except:
-	contours, heirarchy = cv2.findContours(sobel_8u, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
+    contours, heirarchy = cv2.findContours(sobel_8u, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
     # Find level 1 contours
     level1 = []
     for i, tupl in enumerate(heirarchy[0]):
@@ -78,11 +78,11 @@ def segment (path):
     return bgr
     # print (path)
 if __name__ == '__main__':
-	import sys
-	name = sys.argv[1]
-	# print("in Bg_removal")
-	# print(name)
-	# image = cv2.imread(name)
-	img = segment(name)
-	cv2.imwrite(name.split('.')[0]+'_g_.jpg', img);
-	# print("out Bg_removal")
+    import sys
+    name = sys.argv[1]
+    # print("in Bg_removal")
+    # print(name)
+    # image = cv2.imread(name)
+    img = segment(name)
+    cv2.imwrite(name.split('.')[0]+'_g_.jpg', img);
+    # print("out Bg_removal")
