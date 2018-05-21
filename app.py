@@ -7,10 +7,10 @@ os.chdir('../')
 '''
 from flask import Flask, render_template, Response, request, send_file
 import time
-import bg_removal as brm
+# import bg_removal as brm
 import label as lb
 import rawpy
-import cv2
+import imageio
 
 app = Flask(__name__,static_folder='images')
 
@@ -41,8 +41,8 @@ def upload():
        with rawpy.imread(destination) as raw:
           rgb = raw.postprocess()
        destination = destination.split('.')[0]+'.jpg'
-       cv2.imwrite(destination, rgb)
-    brm.segment(destination)
+       imageio.imwrite(destination, rgb)
+    # brm.segment(destination)
     result = lb.main(destination)
     os.system('rm '+destination)
 	
