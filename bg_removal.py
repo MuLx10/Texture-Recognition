@@ -14,7 +14,7 @@ def findSignificantContours (img, sobel_8u):
     try:
         _,contours, heirarchy = cv2.findContours(sobel_8u, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
     except:
-    contours, heirarchy = cv2.findContours(sobel_8u, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
+        contours, heirarchy = cv2.findContours(sobel_8u, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
     # Find level 1 contours
     level1 = []
     for i, tupl in enumerate(heirarchy[0]):
