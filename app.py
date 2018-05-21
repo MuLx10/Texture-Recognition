@@ -41,6 +41,7 @@ def upload():
         if '.nef' in destination.lower():
            with rawpy.imread(destination) as raw:
               rgb = raw.postprocess()
+           os.system('rm '+destination)
            destination = destination.split('.')[0]+'.jpg'
            imageio.imwrite(destination, rgb)
         # brm.segment(destination)
