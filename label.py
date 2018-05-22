@@ -110,7 +110,7 @@ def main(file_name):
         input_operation.outputs[0]: t
     })
   results = np.squeeze(results)
-
+  del t
   top_k = results.argsort()[-5:][::-1]
   labels = load_labels(label_file)
   result = {}
